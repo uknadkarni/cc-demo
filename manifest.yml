@@ -1,0 +1,13 @@
+---
+applications:
+- name: ccdemo
+  memory: 512M 
+  instances: 1
+  host: ccdemo-yourname
+  path: ./target/cc-demo-1.0.0-BUILD-SNAPSHOT.war
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    SPRING_PROFILES_DEFAULT: dev
+  services:
+   - ut-rabbit
+   - ut-gemfire

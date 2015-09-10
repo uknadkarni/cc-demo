@@ -1,0 +1,11 @@
+---
+spring:
+    profiles: dev
+locatorHost: localhost 
+locatorPort: 10334
+---
+spring:
+    profiles: cloud
+
+
+
